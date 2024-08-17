@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="robots" content="none" />
+  <title>S&Q Calculator</title>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+  <style>
+    h1 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #settings {
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+
+    #settings td {
+      vertical-align: middle;
+      text-align: end;
+      border: none;
+    }
+
+    #settings input {
+      max-width: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="mt-3">
+      <h1><a href="npf">S&Q Calculator</a></h1>
+
+      <table id="settings" class="table">
+        <thead>
+          <th colspan="2">Select Input</th>
+          <th>Hours</th>
+          <th>Minutes</th>
+          <th>Seconds</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="radio" id="realTime" name="time" value="realTime" checked="checked" /></td>
+            <td><label for="realTime">Real Time:</label></td>
+            <td><input type="number" class="form-control realTime hours" placeholder="Hours" title="Hours" value="0" min="0"></td>
+            <td><input type="number" class="form-control realTime minutes" placeholder="Minutes" title="Minutes" value="0" min="0"></td>
+            <td><input type="number" class="form-control realTime seconds" placeholder="Seconds" title="Seconds" value="0" min="0"></td>
+          </tr>
+          <tr>
+            <td><input type="radio" id="playbackTime" name="time" value="playbackTime" /></td>
+            <td><label for="playbackTime">Playback Time:</label></td>
+            <td><input type="number" class="form-control playbackTime hours" id="playbackTimeHours" placeholder="Hours" title="Hours" value="0" min="0"> </td>
+            <td><input type="number" class="form-control playbackTime minutes" id="playbackTimeMinutes" placeholder="Minutes" title="Minutes" value="0" min="0"></td>
+            <td><input type="number" class="form-control playbackTime seconds" id="playbackTimeSeconds" placeholder="Seconds" title="Seconds" value="0" min="0"></td>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">Select Motion</th>
+          </tr>
+          <tr>
+            <td><input type="radio" id="quickMotion" name="motion" value="quickMotion" checked="checked" /></td>
+            <td><label for="quickMotion">Quick Motion</label></td>
+          </tr>
+          <tr>
+            <td><input type="radio" id="slowMotion" name="motion" value="slowMotion" /></td>
+            <td><label for="slowMotion">Slow Motion</label></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mt-3">
+        <div class="d-flex flex-wrap justify-content-between w-100">
+          <div class="motions quickMotion flex-grow-1">
+            <h1>Quick Motion</h1>
+            <table class="table table-striped results quickMotion">
+              <thead>
+                <tr>
+                  <th>Real Time<br />(H:M:S)</th>
+                  <th>Rate</th>
+                  <th>Playback Time<br />(H:M:S)</th>
+                  <th>Playback / Shooting<br />(Rec FR / FR)</th>
+                </tr>
+              </thead>
+              <tbody> </tbody>
+            </table>
+          </div>
+          <div class="motions slowMotion flex-grow-1">
+            <h1>Slow Motion</h1>
+            <table class="table table-striped results slowMotion">
+              <thead>
+                <tr>
+                  <th>Real Time<br />(H:M:S)</th>
+                  <th>Rate</th>
+                  <th>Playback Time<br />(H:M:S)</th>
+                  <th>Playback / Shooting<br />(Rec FR / FR)</th>
+                </tr>
+              </thead>
+              <tbody> </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+</html>
