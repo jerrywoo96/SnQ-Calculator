@@ -1,5 +1,6 @@
 {
   "background_color": "#000000",
+  "capture_links": "new-client",
   "description": "S&Q Calculator",
   "display": "standalone",
   "icons": [
