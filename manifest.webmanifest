@@ -1,0 +1,21 @@
+{
+  "background_color": "#000000",
+  "description": "S&Q Calculator",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "any",
+      "src": "/SnQ-Calculator/favicon.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "en-SG",
+  "name": "S&Q Calculator",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "scope": "/SnQ-Calculator/",
+  "short_name": "S&Q Calculator",
+  "start_url": "/SnQ-Calculator/",
+  "theme_color": "#000000"
+}
