@@ -4,6 +4,8 @@ CACHE:
 /SnQ-Calculator/
 /SnQ-Calculator/script.js
 /SnQ-Calculator/favicon.svg
+/SnQ-Calculator/manifest.appcache
+/SnQ-Calculator/manifest.webmanifest
 https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css
 https://cdn.jsdelivr.net/npm/core-js-bundle@latest/minified.min.js
 https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
